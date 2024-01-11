@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music_app_ui/pages/musicPlayPage.dart';
 
 import 'constants/appText.dart';
 
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
             bodySmall: AppTypography().body,
             labelSmall: AppTypography().button,
           )),
-      home: Container(),
+      home: const MusicPlayPage(),
     );
   }
 }

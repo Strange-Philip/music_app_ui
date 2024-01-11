@@ -17,4 +17,5 @@ class AppColors {
   static const Color lightGreen = Color(0xff5EB1A5);
   static const Color textColorWhite = Color(0xffFCFFFF);
   static const Color textColorBlack = Color(0xff12141B);
+  static const Color inactiveSlider = Color(0xff064D43);
 }
