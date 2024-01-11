@@ -1,16 +1,16 @@
-# music_app_ui
+# Music App UI Design with Flutter
 
-A new Flutter project.
+🎨A flutter ui project inspired by this Ui design by the work of [Jeffery]() x [Raegan]().
 
-## Getting Started
+🔗Here is a link to the 👉🏾[original design on Figma](https://www.figma.com/file/8MTbPs6ZXUSsduaPdBLWNY/Community-File?type=design&node-id=3%3A298&mode=design&t=Nar1sMWWQ7duGomy-1p) .
 
-This project is a starting point for a Flutter application.
+## 🧪Additions I made to the design:
+Added some animations to the project to make it more interesting.🫣
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Feel free to clone the project and play around with it.I tried to organize the code as much as possible.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📸Screenshots
+<img width="450" height="900" src="https://github.com/Strange-Philip/vodafone_redesign/blob/main/assets/demo.gif">
+<img width="450" height="900" src="https://github.com/Strange-Philip/vodafone_redesign/blob/main/assets/screenshot_light.png">
+<img width="450" height="900" src="https://github.com/Strange-Philip/vodafone_redesign/blob/main/assets/screenshot_dark.png">
