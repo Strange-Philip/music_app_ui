@@ -7,6 +7,8 @@ import 'package:music_app_ui/widgets/playnextCard.dart';
 
 import '../widgets/nameStar.dart';
 import '../widgets/slider.dart';
+import '../widgets/slideupRoute.dart';
+import 'lyricsPage.dart';
 
 class MusicPlayPage extends StatefulWidget {
   const MusicPlayPage({super.key});
@@ -80,26 +82,37 @@ class _MusicPlayPageState extends State<MusicPlayPage> {
                   style: Theme.of(context).textTheme.titleLarge!.copyWith(
                       color: AppColors.textColorWhite, fontSize: 14, fontWeight: FontWeight.w700),
                 ),
-                Container(
-                  width: 55,
-                  child: Row(
-                    children: [
-                      Text(
-                        'SWIPE',
-                        style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                            color: AppColors.textColorWhite,
-                            fontSize: 10,
-                            fontWeight: FontWeight.w500),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      SlideUpRoute(
+                        page: const LyricsPage(),
                       ),
-                      Spacer(),
-                      SvgPicture.asset('asset/up.svg',
-                          height: 10,
-                          width: 10,
-                          colorFilter: const ColorFilter.mode(
-                            AppColors.textColorWhite,
-                            BlendMode.srcIn,
-                          )),
-                    ],
+                    );
+                  },
+                  child: Container(
+                    color: Colors.transparent,
+                    width: 55,
+                    child: Row(
+                      children: [
+                        Text(
+                          'SWIPE',
+                          style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                              color: AppColors.textColorWhite,
+                              fontSize: 10,
+                              fontWeight: FontWeight.w500),
+                        ),
+                        Spacer(),
+                        SvgPicture.asset('asset/up.svg',
+                            height: 10,
+                            width: 10,
+                            colorFilter: const ColorFilter.mode(
+                              AppColors.textColorWhite,
+                              BlendMode.srcIn,
+                            )),
+                      ],
+                    ),
                   ),
                 ),
               ],

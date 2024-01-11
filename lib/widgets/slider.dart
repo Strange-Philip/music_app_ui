@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:music_app_ui/constants/appColors.dart';
 
 class SliderWidget extends StatelessWidget {
-  const SliderWidget({super.key});
+  final bool? light;
+  const SliderWidget({super.key, this.light = false});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +22,8 @@ class SliderWidget extends StatelessWidget {
               max: 100,
               onChanged: (value) {},
               activeColor: AppColors.textColorWhite,
-              inactiveColor: AppColors.inactiveSlider,
+              inactiveColor:
+                  light! ? AppColors.textColorWhite.withOpacity(0.3) : AppColors.inactiveSlider,
               thumbColor: AppColors.textColorWhite,
             ),
           ),
